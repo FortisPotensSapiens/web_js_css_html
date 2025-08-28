@@ -17,6 +17,9 @@ menu.addEventListener('click', function (event) {
         let mobile = document.querySelector('.mobile-menu');
         if (!mobile.classList.contains('hide')) {
             mobile.classList.add('hide');
+            document.querySelectorAll(".mobile-btn").forEach(function (item) {
+                item.classList.toggle('btn-hide');
+            })
         }
     }
     let body = document.querySelector("body");
